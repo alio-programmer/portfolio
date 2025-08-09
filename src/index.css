@@ -1,0 +1,6 @@
+@import "tailwindcss";
+.bg-clip-gradient {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
