@@ -21,7 +21,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-6 bg-black">
+        <section id="projects" className="py-6">
             <motion.div
                 className="max-w-6xl mx-auto px-4"
                 initial={{ opacity: 0, y: 30 }}

@@ -9,7 +9,7 @@ import Contact from './components/Contact'
 
 export default function App(){
     return (
-        <div className="min-h-screen bg-black text-slate-100 font-inter">
+        <div className="min-h-screen bg-gradient-to-t from-gray-900 to-black text-slate-100 font-inter">
             <Nav />
             <main className="container mx-auto px-6 py-12 space-y-20">
                 <Hero />

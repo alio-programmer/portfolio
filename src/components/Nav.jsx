@@ -10,7 +10,7 @@ export default function Nav() {
             initial={{ y: -40, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="fixed top-0 left-0 right-0 z-40 bg-black border-b border-pink-500/20"
+            className="fixed top-0 left-0 right-0 z-40 bg-black bg-opacity-80 backdrop-blur-sm border-b border-slate-800"
         >
             <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
                 {/* Logo */}

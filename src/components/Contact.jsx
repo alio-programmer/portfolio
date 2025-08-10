@@ -2,32 +2,47 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import resumePDF from '../assets/resume.pdf' // adjust path if needed
 
-export default function Contact(){
+export default function Contact() {
     return (
-        <section id="contact">
+        <section id="contact" className="py-16 ">
             <motion.div
-                className="max-w-3xl mx-auto text-center"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
+                className="max-w-3xl mx-auto text-center px-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
             >
-                <h2 className="text-2xl font-semibold">Get in touch</h2>
-                <p className="mt-3 text-slate-300">
-                    Email me at <a href="mailto:gauravsinghbisht.scoe.it@gmail.com" className="underline">gauravsinghbisht.scoe.it@gmail.com</a>
-                    or call <a className="underline" href="tel:+919510158812">+91-9510158812</a>
+                <h2 className="text-3xl font-semibold text-white mb-4">Get in Touch</h2>
+                <p className="text-slate-400 text-lg max-w-xl mx-auto mb-8 leading-relaxed">
+                    Feel free to reach out to me via email or phone. I’m always open to
+                    discussing new projects or opportunities.
+                </p>
+                <p className="text-slate-300 mb-8">
+                    <a
+                        href="mailto:gauravsinghbisht.scoe.it@gmail.com"
+                        className="underline hover:text-indigo-500 transition-colors"
+                    >
+                        gauravsinghbisht.scoe.it@gmail.com
+                    </a>{' '}
+                    or call{' '}
+                    <a
+                        href="tel:+919510158812"
+                        className="underline hover:text-indigo-500 transition-colors"
+                    >
+                        +91-9510158812
+                    </a>
                 </p>
 
                 <motion.div
-                    className="mt-6 inline-grid grid-cols-2 gap-3"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.4 }}
+                    className="inline-flex gap-6 justify-center"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
                 >
-                    {/* Download Resume button */}
                     <a
                         href={resumePDF}
                         download="Gaurav_Singh_Resume.pdf"
-                        className="py-2 px-4 rounded bg-indigo-600 hover:bg-indigo-700 transition-colors duration-300"
+                        className="px-6 py-3 bg-indigo-600 text-white rounded-md shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
                     >
                         Download Resume
                     </a>
@@ -36,9 +51,9 @@ export default function Contact(){
                         href="https://github.com/alio-programmer"
                         target="_blank"
                         rel="noreferrer"
-                        className="py-2 px-4 rounded border border-slate-600 hover:bg-slate-800 transition-colors duration-300"
+                        className="px-6 py-3 border border-slate-600 text-slate-300 rounded-md shadow-sm hover:bg-slate-700 hover:border-indigo-600 hover:text-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
                     >
-                        Github
+                        GitHub
                     </a>
                 </motion.div>
             </motion.div>
