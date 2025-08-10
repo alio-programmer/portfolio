@@ -10,7 +10,7 @@ export default function About() {
         { "name": "C++", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
         { "name": "SQL", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" },
         { "name": "Apache Spark", "image":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg" },
-        { "name": "Apache Kafka", "image":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg" },
+        { "name": "Apache Kafka", "image":"https://res.cloudinary.com/dnkhpkpy4/image/upload/v1754825552/png-clipart-kafka-logo-icons-logos-emojis-tech-companies-thumbnail_cig1j9.png" },
         { "name": "Hadoop", "image":"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hadoop/hadoop-original.svg" },
         { "name": "Snowflake", "image": "https://res.cloudinary.com/dnkhpkpy4/image/upload/v1754822413/idCkdSg0B6_1754822238540_uqe3s0.png" },
         { "name": "Azure", "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" },
@@ -60,21 +60,6 @@ export default function About() {
                                 <InfoCard  item={item.name} imgurl={item.image} id={i} />
                             </motion.div>
                         ))}
-                    </div>
-
-                    <div className="mt-6 flex flex-wrap gap-3">
-                        <a href="https://github.com/alio-programmer" target="_blank" rel="noreferrer"
-                           className="text-sm underline text-slate-600 hover:text-slate-400 transition-colors">
-                            Github
-                        </a>
-                        <a href="https://www.linkedin.com/in/gaurav-singh-bisht-3421b6241/" target="_blank" rel="noreferrer"
-                           className="text-sm underline text-slate-600 hover:text-slate-400 transition-colors">
-                            LinkedIn
-                        </a>
-                        <a href="mailto:gauravsinghbisht.scoe.it@gmail.com"
-                           className="text-sm underline text-slate-600 hover:text-slate-400 transition-colors">
-                            Email
-                        </a>
                     </div>
                 </motion.div>
             </motion.div>
